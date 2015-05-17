@@ -1,0 +1,114 @@
+/*/ Reset */
+* {margin:0; padding: 0; outline: none; font-family: arial, calibri;}
+img {border:none;}
+ul{list-style:none;}
+a {text-decoration:none;}
+
+@media (min-width: 320px) and (max-width: 768px) {
+	.noPadding {padding:0 !important;}
+	.noMargin {margin:0 !important;}
+}
+
+/*/ Classes */
+.floatLeft{float: left;}
+.floatRight{float: right;}
+.linkEstilizado{color:#065631; text-decoration: underline;}
+.marginTop20 {margin-top:20px;}
+.marginBottom20 {margin-bottom:20px;}
+.bulletBread {background:url('../imagens/bullet.png') no-repeat; width:12px; height:12px; float:left; margin: 3px 6px 0px 4px;}
+.conteudoDireita{width:600px;}
+
+/* Bread */
+.bread a {float:left; color:#666666;}
+.bread a:hover {color:#333333;}
+.bread span{color:#888888;}
+
+/* Mostra Esconde */
+.mostraEsconde {width:600px;}
+.mostraEsconde h2{color:#4db748; font-size:18px; width:100%; padding-bottom:4px; border-bottom:3px solid #d9efd8; position:relative; cursor:pointer;}
+.mostraEsconde span{position:absolute; background:url('../imagens/abre-fecha.png') no-repeat; width:13px; height:13px; top: 4px; right: 5px;}
+.aberto {background:url('../imagens/aberto.png') no-repeat !important;  width:13px; height:13px;}
+/*/ Estilização geral /*/
+a{text-decoration:none;}
+p, span, div, h1, h2, h3, h4 {font-family: arial, calibri;}
+h1{color:#add6bf; font-size:22px; margin-bottom:10px;}
+h2 {font-size:20px; color:#065631; margin-bottom:10px;}
+h3 {font-size:18px; color:#808080;}
+p {font-size:16px; color:#333333; line-height:18px; padding-bottom:15px;}
+
+/*/ Definição geral */
+#wrapper{width:100%; margin: auto;}
+
+/*/ Topo */
+#topo {width: 100%; padding: 20px 20px 0 20px ; background-color:#acd6be; }
+#topo #login {float:right;  font-size:10px; }
+#topo #login a{text-decoration:underline; color:#ffffff;}
+/*/ Menu */
+#menu {margin: 92px 40px 0 0; float:right;}
+#menu ul {position:relative; float:right;}
+#menu ul li {float:left; padding-left: 40px; opacity:0.8;}
+#menu ul li a{color:#ffffff; text-decoration: none;}
+#menu ul li:hover{opacity:1; position:relative;}
+#menu ul li:hover .bulletOpcoes{display:block;}
+#menu ul li:hover ul li{display:inline-block;}
+#menu ul li ul {position:absolute; background:#ffffff; top:32px;  z-index:100000;}
+#menu ul li ul li{padding-left:0; border-bottom:1px solid #acd6be; border-left:1px solid #acd6be; border-right:1px solid #acd6be; display: none; font-size: 18px;}
+#menu ul li ul li:hover{background:#acd6be;}
+#menu ul li ul li a{font-size:14px; color:#666666; width:120px; float:left; padding:10px;}
+#menu #iconeQuemSomos {background:url('../imagens/quem-somos.png') no-repeat; width:30px; height: 30px; padding:52px 0 0 0; background-position:center;}
+#menu #iconeProdutos{background:url('../imagens/produtos.png') no-repeat; width:30px; height: 30px; padding:52px 0 0 0; background-position:center;}
+#menu #iconeSuporte{background:url('../imagens/suporte.png') no-repeat; width:30px; height: 30px; padding:52px 0 0 0; background-position:center;}
+#menu #iconeContato{background:url('../imagens/contato.png') no-repeat; width:30px; height: 30px; padding:52px 0 0 0; background-position:center;}
+.bulletOpcoes{background:url('../imagens/bullet-menu.png') no-repeat center; width:17px; height:14px; position: absolute; left: 70px; display:none;}
+
+/*/ Conteúdo */
+#conteudo {width:100%; padding:20px; float:left;}
+#banner {width:100%;  position:relative;}
+
+/* Banner */
+#banner #listaBanner li {display:none; z-index:1; float:left;}
+#banner #listaBanner li:first-child {display:block;}
+#banner #setaEsquerda {position:absolute; top:154px; left:15px; z-index:10; opacity:0.8;}
+#banner #setaDireita {position:absolute;top: 154px;left: 879px; z-index:10; opacity:0.8;}
+#banner #setaDireita img,#banner #setaEsquerda img  {transition: width 500ms ease-in-out;}
+#banner #setaDireita img:hover ,#banner #setaEsquerda img:hover { width:31px; height:45px;}
+#banner #setaDireita:hover, #banner #setaEsquerda:hover {opacity:1; cursor:pointer;}
+#banner #faixaCinza {width:920px; height:45px; background-color:rgba(0, 0, 0, 0.5); position:absolute; top:305px;}
+#formataUlBanner {margin-top:15px; float:left;}
+.bolinhas{background: url('../imagens/bolinhaBranca.png') no-repeat; width:14px; height:14px; margin:0 0 0 5px; z-index:100; float:left; cursor:pointer;}
+.ativa{background: url('../imagens/bolinhaVerde.png') no-repeat;}
+
+/*Box destaques*/
+/*.destaques{width:440px; float:left; padding: 20px 20px 20px 0px; height:200px; background-color:#eeeeee; border-radius:10px; box-shadow: 2px 0 9px 2px #8C7E7E; margin-top:20px;}*/
+.destaques{height:250px; padding:20px 0;}
+.conteudoDestaque{width:99%; }
+.bordaDinamica{width:1px; height:0px; transition: height 500ms ease-in-out; float:right; background-color:#4cb743;}
+.destaques:hover .bordaDinamica{height:100%;}
+.destaques h2 {text-align:center;}
+.destaques img {float:left;}
+
+@media (max-width: 768px) {
+	.destaques {height:auto;}
+    .bordaDinamica {display:none;}
+    .destaques {padding:0;}
+	.destaques img {margin:10px auto; float:none; display:block;}
+}
+
+/* Rodapé*/
+#rodape{background-color:#add6bf; float:left; position:relative; margin-top:20px; width:100%; padding:20px;}
+#rodape p {color:#ffffff; font-size:12px; margin-top:110px; line-height:14px;}
+#logoRodape {position:absolute; top: -20px; left: 390px; z-index:10;}
+#formaRodape {position:absolute; top: -30px; left: 325px; z-index:1;}
+.formataIconesSociais {width:50px; height:50px; float:left; margin-left:5px;}
+#twitter{background-image:url('../imagens/icone-twitter.png');}
+#facebook{background-image:url('../imagens/icone-facebook.png'); }
+#youtube{background-image:url('../imagens/icone-youtube.png'); }
+.formataIconesSociais:hover{background-position: 0 50px;}
+#mapaSite{margin-top:60px;}
+.listaMapa {font-size:12px; color:#ffffff; float:right; margin-left:30px;}
+.listaMapa li{list-style:none; margin-top:5px;}
+.listaMapa li a {color:#ffffff;}
+.listaMapa li:first-child{font-size:14px; color:#ffffff; list-style-image:url('../imagens/bullet.png'); }
+
+/*Produtos */
+.conteudoMostraEsconde {display:none;}

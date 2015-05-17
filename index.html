@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Home | Matrix Systems</title>
+    <link rel="stylesheet" type="text/css" href="css/estiloGeral.css" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css" />
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css" />
+    <link rel="stylesheet" type="text/css" href="css/owl.theme.css" />
+    <script src="js/biblioteca/jquery-2.1.3.min.js"></script>
+    <script src="js/biblioteca/owl.carousel.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $("#owl-demo").owlCarousel({
+
+                navigation: false, // Show next and prev buttons
+                slideSpeed: 300,
+                paginationSpeed: 400,
+                singleItem: true,
+                itemsDesktop : true,
+                itemsDesktopSmall : true,
+                itemsTablet: true,
+                itemsMobile: true
+            });
+
+        });
+    </script>
+    <style>
+        #owl-demo .item img{
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    </style>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+</head>
+<body>
+    <div id="wrapper">
+        <header id="topo" class="floatLeft">
+            <div class="container noMargin noPadding">
+                <p id="login">
+                    <a href="" title="">Login</a>
+                </p>
+                <div class="floatLeft col-sm-3">
+                    <a href="index.html" title="">
+                        <img src="imagens/logo.png" alt="Matrix Systems" title="Matrix Systems" class="img-responsive"/>
+                    </a>
+                </div>
+                <nav id="menu" class="floatRight navbar-collapse bs-navbar-collapse collapse" aria-expanded="false">
+                    <ul>
+                        <li>
+                            <a id="iconeQuemSomos" href="" title="">Quem Somos</a>
+                        </li>
+                        <li>
+                            <a id="iconeProdutos" href="" title="">Produtos</a>
+                            <span class="bulletOpcoes"></span>
+                            <ul>
+                                <li>
+                                    <a href="produtos/matrix-pdv.html" title="">Matrix PDV</a>
+                                </li>
+                                <li>
+                                    <a href="" title="">Matrix Gestão</a>
+                                </li>
+                                <li>
+                                    <a href="" title="">Matrix Loja</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a id="iconeSuporte" href="" title="">Suporte</a>
+                        </li>
+                        <li>
+                            <a id="iconeContato" href="" title="">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div id="conteudo">
+            <div class="container noMargin noPadding">
+                <!--<div id="banner">
+                    <span id="setaEsquerda">
+                        <img src="imagens/banner/seta-esquerda.png" />
+                    </span>
+                    <span id="setaDireita">
+                        <img src="imagens/banner/seta-direita.png" />
+                    </span>
+                    <ul id="listaBanner">
+                        <li>
+                            <img src="imagens/banner/imagens/banner01.jpg" class="img-responsive" />
+                        </li>
+                        <li>
+                            <img src="imagens/banner/imagens/banner02.jpg" class="img-responsive" />
+                        </li>
+                        <li>
+                            <img src="imagens/banner/imagens/banner03.jpg" class="img-responsive" />
+                        </li>
+                        <li>
+                            <img src="imagens/banner/imagens/banner04.jpg" class="img-responsive" />
+                        </li>
+                    </ul>
+                    <div id="faixaCinza">
+                        <ul id="formataUlBanner"></ul>
+                    </div>
+                </div> -->
+                <div id="owl-demo" class="owl-carousel owl-theme">
+                    <div class="item">
+                        <img src="imagens/banner/imagens/banner01.jpg" />
+                    </div>                                             
+                    <div class="item">                                 
+                        <img src="imagens/banner/imagens/banner02.jpg" />
+                    </div>                                             
+                    <div class="item">                                 
+                        <img src="imagens/banner/imagens/banner03.jpg" />
+                    </div>                                             
+                    <div class="item">                                 
+                        <img src="imagens/banner/imagens/banner04.jpg" />
+                    </div>
+                </div>
+                <article>
+                    <div class="destaques col-sm-6 col-xs-12">
+                        <div class="bordaDinamica"></div>
+                        <div class="conteudoDestaque">
+                            <h2>Matrix Gestão</h2>
+                            <img src="imagens/matrix-gestao.png"/>
+                            <p class="col-sm-8 col-xs-12">O Matrix Loja é a solução completa para gerenciamento do seu estabelecimento comercial, com ele é possível informatizar todos os processos do seu negócio. <a href="javascript:void(0);" title="Saiba mais sobre o Matrix Loja" class="linkEstilizado"><strong>Saiba Mais</strong></a>.</p>
+                        </div>                        
+                    </div>
+                    <div class="destaques col-sm-6 col-xs-12">
+                        <div class="bordaDinamica"></div>
+                        <div class="conteudoDestaque">
+                            <h2>Quem Somos</h2>
+                            <p>A Matrix Systems ME atua na área de desenvolvimento de softwares de automação para pequenas e médias empresas do ramo comercial, localizadas na grande São Paulo. Atualmente, temos 3 tipos de softwares voltados a você. <a href="javascript:void(0);" title="Saiba quem somos" class="linkEstilizado"><strong>Conheça mais sobre nós</strong></a>.</p>
+                        </div>                        
+                    </div>
+                    <div class="destaques col-sm-6 col-xs-12">
+                        <div class="bordaDinamica"></div>
+                        <div class="conteudoDestaque">
+                            <h2>Nossa metodologia</h2>
+                            <p>n diam lorem, ornare non malesuada et, sagittis quis purus. Sed tortor urna, pellentesque ac consectetur id, egestas ultricies dui. Ut et dolor ipsum. Donec ornare interdum tellus. Pellentesque ut lobortis mi, nec gravida sem. Sed luctus commodo urna sit amet mollis. Donec congue consectetur lacus cursus luctus. <a href="javascript:void(0);" title="Nossa metodologia" class="linkEstilizado"><strong>Veja mais aqui</strong></a></p>
+                        </div>                        
+                    </div>
+                    <div class="destaques col-sm-6 col-xs-12">
+                        <div class="bordaDinamica"></div>
+                        <div class="conteudoDestaque">
+                            <h2>Suporte</h2>
+                            <img src="imagens/imagem-suporte.png" />
+                            <p class="col-sm-8 col-xs-12">A Matrix Systems sabe que o suporte ao cliente é uma atividade de extrema responsabilidade. Por isso é importante conhecer a forma que prestamos suporte a você cliente. <a href="javascript:void(0);" title="Veja como funciona o suporte na Matrix Systems" class="linkEstilizado"><strong>Veja mais</strong></a>.</p>
+                        </div>                        
+                    </div>
+                </article>
+            </div>
+        </div>
+        <footer id="rodape">
+            <a href="" title="">
+                <img src="imagens/logo-rodape.png" id="logoRodape" title="Matrix Systems"/>
+            </a>
+            <img src="imagens/forma-rodape.png" id="formaRodape"/>
+            <div id="social">
+                <a href="javascript:void(0);" title="Twitter" id="twitter" class="formataIconesSociais"></a>
+                <a href="javascript:void(0);" title="Facebook" id="facebook" class="formataIconesSociais"></a>
+                <a href="javascript:void(0);" title="Youtube" id="youtube" class="formataIconesSociais"></a>
+            </div>            
+            <nav id="mapaSite">
+                <ul class="listaMapa">
+                    <li><a href="javascript:void(0);">Quem Somos</a></li>
+                    <li><a href="javascript:void(0);">Nossa Metodologia</a></li>
+                </ul>
+                <ul class="listaMapa">
+                    <li><a href="javascript:void(0);">Produtos</a></li>
+                    <li><a href="javascript:void(0);">Matrix Gestão</a></li>
+                    <li><a href="javascript:void(0);">Matrix Loja</a></li>
+                    <li><a href="javascript:void(0);">Matrix PDV</a></li>
+                </ul>
+                <ul class="listaMapa">
+                    <li><a href="javascript:void(0);">Contato</a></li>
+                </ul>
+                <ul class="listaMapa">
+                    <li><a href="javascript:void(0);">Suporte</a></li>
+                </ul>
+            </nav>
+            <p>Av. Francisco Morato, 1001 – Butantã – São Paulo – SP <br />Telefone: 2460 - 7070</p>
+        </footer>
+    </div>
+</body>
+</html>
